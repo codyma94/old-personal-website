@@ -18,7 +18,6 @@ var Boxlayout = (function() {
   var supportTransitions = Modernizr.csstransitions;
 
   function init() {
-    console.log($el);
     initEvents();
   }
 
