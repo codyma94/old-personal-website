@@ -1,28 +1,28 @@
 var Boxlayout = (function() {
 
-  var $el = $( "#bl-main" );
-  var $sections = $el.children("section");
-
-  var transEndEventNames = {
-      'WebkitTransition' : 'webkitTransitionEnd',
-      'MozTransition' : 'transitionend',
-      'OTransition' : 'oTransitionEnd',
-      'msTransition' : 'MSTransitionEnd',
-      'transition' : 'transitionend'
+  function init() {
+    var $el = $( "#bl-main" );
+    console.log("$el:" + $el);
+    var $sections = $el.children("section");
+    console.log("$sections: " + $sections);
+    var transEndEventNames = {
+       'WebkitTransition' : 'webkitTransitionEnd',
+       'MozTransition' : 'transitionend',
+       'OTransition' : 'oTransitionEnd',
+       'msTransition' : 'MSTransitionEnd',
+       'transition' : 'transitionend'
     };
 
-  // transition end event name
-  var transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ];
+    // transition end event name
+    var transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ];
 
-  // support css transitions
-  var supportTransitions = Modernizr.csstransitions;
+    // support css transitions
+    var supportTransitions = Modernizr.csstransitions;
 
-  function init() {
-    console.log($el);
-    initEvents();
+    initEvents($el, $sections, transEndEventName, transEndEventNames, supportTransitions);
   }
 
-  function initEvents() {
+  function initEvents($el, $sections, transEndEventName, transEndEventNames, supportTransitions) {
     $sections.each( function() {
 
       var $section = $(this);
