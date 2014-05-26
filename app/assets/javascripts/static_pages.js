@@ -2,9 +2,7 @@ var Boxlayout = (function() {
 
   function init() {
     var $el = $( "#bl-main" );
-    console.log("$el:" + $el);
     var $sections = $el.children("section");
-    console.log("$sections: " + $sections);
     var transEndEventNames = {
        'WebkitTransition' : 'webkitTransitionEnd',
        'MozTransition' : 'transitionend',
@@ -35,7 +33,7 @@ var Boxlayout = (function() {
           $el.addClass( 'bl-expand-item' );
         }
 
-      }).find( 'span.bl-icon-close' ).on( 'click', function() {
+      }).find( 'i.bl-icon-close' ).on( 'click', function() {
 
         // close the expanded section and scale up the others
         $section.data( 'open', false ).removeClass( 'bl-expand' ).on( transEndEventName, function( event ) {
