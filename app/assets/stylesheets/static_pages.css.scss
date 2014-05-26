@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+.bl-content h4 {
+  font-weight: 100;
+  margin: 0 auto;
+  padding: 2px;
+  text-align: center;
+}
 .welcome {
   height: 50%;
 }
@@ -197,6 +203,45 @@ div.bl-panel-items > div > div {
 	font-weight: 300;
 	margin: 0 0 20px 0;
   text-align: center;
+}
+
+.bl-content .name {
+  margin: 0;
+}
+
+.resume-section-container {
+  margin-bottom: 30px;
+}
+.bl-content .resume-section-header {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.bl-content .resume-section {
+  font-size: 1.5em;
+  padding: 0 40px;
+}
+
+.resume-left {
+  display: inline-block;
+  float: left;
+}
+
+.resume-right {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.resume-description {
+  clear: both;
+  margin-bottom: 15px;
+}
+.resume-description > ul {
+  clear: both;
+  padding-left: 60px;
 }
 
 .bl-content article {
