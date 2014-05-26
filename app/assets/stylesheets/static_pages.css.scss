@@ -1,30 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-.bl-content h4 {
-  font-weight: 100;
-  margin: 0 auto;
-  padding: 2px;
-  text-align: center;
-}
-.welcome {
-  height: 50%;
-}
-.contact {
-  height: 50%;
-}
-.contact > ul {
-  line-height: 4;
-  margin-left: 8%;
-}
-.contact > ul li {
-  font-size: 1.5em;
-}
-.contact > ul li a {
-  font-weight: 100;
-  padding: 0;
-  font-size: 100%;
-}
-
 body, html {
   font-size: 100%;
   padding: 0;
@@ -65,6 +40,13 @@ a:hover {
 
 .container {
   height: 100%;
+}
+
+.bl-content h4 {
+  font-weight: 100;
+  margin: 0 auto;
+  padding: 2px;
+  text-align: center;
 }
 
 .bl-main {
@@ -210,6 +192,7 @@ div.bl-panel-items > div > div {
 }
 
 .resume-section-container {
+  clear: top;
   margin-bottom: 30px;
 }
 .bl-content .resume-section-header {
@@ -222,30 +205,6 @@ div.bl-panel-items > div > div {
 .bl-content .resume-section {
   font-size: 1.5em;
   padding: 0 40px;
-}
-
-.resume-left {
-  display: inline-block;
-  float: left;
-}
-
-.resume-right {
-  display: inline-block;
-  float: right;
-  text-align: right;
-}
-
-.resume-description {
-  clear: both;
-  margin-bottom: 15px;
-}
-.resume-description > ul {
-  clear: both;
-  padding-left: 60px;
-}
-
-.bl-content article {
-	padding: 20px 40px 20px 0px;
 }
 
 .bl-content article h3 {
@@ -282,6 +241,60 @@ div.bl-panel-items > div > div {
 .bl-content > ul li a img {
 	display: block;
 	max-width: 100%;
+}
+
+.bl-content article {
+	padding: 20px 40px 20px 0px;
+}
+
+.contact {
+  height: 50%;
+}
+.contact > ul {
+  line-height: 4;
+  margin-left: 8%;
+}
+.contact > ul li {
+  font-size: 1.5em;
+}
+.contact > ul li a {
+  font-weight: 100;
+  padding: 0;
+  font-size: 100%;
+}
+
+
+.resume-left {
+  display: inline-block;
+  float: left;
+}
+
+.resume-right {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.resume-description {
+  clear: both;
+  margin-bottom: 15px;
+}
+.resume-description > ul {
+  clear: both;
+  padding: 0 60px;
+}
+
+.resume-description ul.one-liners {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.resume-description .full-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.welcome {
+  height: 50%;
 }
 
 /* Transition classes and properties */

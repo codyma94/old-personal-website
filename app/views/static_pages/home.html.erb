@@ -37,7 +37,7 @@
               <b> Brown University</b>, BS in Comp. Sci., GPA: 3.4
             </div>
             <div class="resume-right">
-              Providence, RI | Expected Graduation May 2016
+              Providence, RI | Class of 2016
             </div>
             <div class="resume-description">
               Relevant Courses - Computer Systems in C and x86, Data Science, Systems Security, Discrete Structures and Probability, Object Oriented Programming in Scala and Java, Functional Programming in Scheme and ML
@@ -135,6 +135,28 @@
         </div>
         <div class="resume-section-container">
           <h2 class="resume-section-header"> Relevant Skills </h2>
+          <div class="resume-section">
+            <div class="resume-description">
+              <ul class="one-liners">
+                <li> <b> Most experienced with</b>: Python, C, Ruby on Rails, Java</li>
+                <li> <b> Knowledgable about</b>: Scala, Javascript, jQuery, HTML/CSS, MySQL, OCaml, Scheme, BASH</li>
+            </div>
+          </div>
+        </div>
+        <div class="resume-section-container">
+          <h2 class="resume-section-header"> Other Interests </h2>
+          <div class="resume-section">
+            <div class="resume-description">
+              <table class="full-table">
+                <tr>
+                  <td> Frisbee </td>
+                  <td> Ping Pong </td>
+                  <td> Reading </td>
+                  <td> French </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
       <i class="fa fa-minus bl-icon bl-icon-close"></i>
@@ -163,4 +185,14 @@
 
 <script type="text/javascript">
   Boxlayout.init();
+
+  keys = []
+  konami = '38,38,40,40,37,39,37,39,66,65';
+  $(document).keydown(function(e) {
+      keys.push(e.keyCode);
+      if (keys.toString().indexOf(konami) >= 0) {
+        console.log("cheat code activated");
+        keys = [];
+      }
+  });
 </script>
