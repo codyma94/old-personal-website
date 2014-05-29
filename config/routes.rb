@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-  get '/admin' => 'admin#main'
+
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/admin', to: 'admin#main', via: 'get', as: 'admin'
+  match '/admin/signin', to: 'sessions#new', via: 'get', as: 'signin'
+  match '/admin/signout', to: 'sessions#destroy', via: 'delete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
