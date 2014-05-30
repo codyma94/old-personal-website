@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
   before_action :signed_in, only: [:new, :create]
+  layout "admin"
+
   def new
   end
 

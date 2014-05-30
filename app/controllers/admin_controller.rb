@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
   before_action :signed_in_admin
+  layout "admin"
 
   def main
   end
