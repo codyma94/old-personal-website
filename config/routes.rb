@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   match '/admin', to: 'admin#main', via: 'get', as: 'admin'
   match '/admin/signin', to: 'sessions#new', via: 'get', as: 'signin'
-  match '/admin/signout', to: 'sessions#destroy', via: 'delete'
+  match '/admin/signout', to: 'sessions#destroy', via: 'delete', as: 'admin_signout'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
