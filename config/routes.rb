@@ -4,9 +4,12 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
 
+  namespace :admin do
+    match '', to: 'blogposts#index', via: 'get', as: '/'
+    resources :blogposts
+  end
 
-  match '/admin', to: 'admin#main', via: 'get', as: 'admin'
   match '/admin/signin', to: 'sessions#new', via: 'get', as: 'signin'
-  match '/admin/signout', to: 'sessions#destroy', via: 'delete', as: 'admin_signout'
+  match '/admin/signout', to: 'sessions#destroy', via: 'delete', as: 'signout'
 
 end
