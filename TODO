@@ -25,4 +25,4 @@
   - Stop loading application.js for admin side
   - Add more personally relevant stuff to admin side (todo type thing maybe?)
   - Backbone? Could be fun
- - Vim bindings to scroll...?
+  - Vim bindings to scroll...?
