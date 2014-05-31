@@ -1,2 +1,29 @@
-- /admin URL for blogposts
-  - create admin controller first or create blogpost controller first?
+- Blogging
+  - Style admin side of blogging
+    - Maybe make modal for new post instead of text field above
+  - Add abilty to edit posts
+  - Make blog section generate from db
+    - Also only make it load on click
+
+- Home
+  - Bind ESC to minimizing a div
+  - Add stuff to projects section?
+    - Alternatively, just move contacts out of about, and fuck the projects section
+  - Vim bindings to scroll...?
+  - Move contacts stuff horizontal and see if it looks better
+  - Change color scheme
+  - Increase font size in header of resume (address stuff is kinda small)
+
+- Other
+  - Install fonts locally.........? Was a giant pain in the ass, not sure if worth it
+  - Some cool Javascript shit
+  - Figure out how cookies work in production for rails 4 (secret_env in config/)
+  - Yellow login button is kinda weird, might want to rethink that
+    - Cursor is a bit large... kinda being anal though
+    - Otherwise login screen is pretty dope
+  - Learn about heroku db in production
+
+- Minimally important/long-term goals
+  - Stop loading application.js for admin side
+  - Add more personally relevant stuff to admin side (todo type thing maybe?)
+  - Backbone? Could be fun
