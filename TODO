@@ -21,6 +21,7 @@
     - Cursor is a bit large... kinda being anal though
     - Otherwise login screen is pretty dope
   - Learn about heroku db in production
+  - Update 404
 
 - Minimally important/long-term goals
   - Stop loading application.js for admin side
