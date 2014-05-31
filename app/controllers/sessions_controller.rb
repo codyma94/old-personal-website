@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       sign_in admin
       redirect_to admin_path
     else
-      render 'new'
+      redirect_to signin_path
     end
   end
 

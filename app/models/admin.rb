@@ -1,4 +1,20 @@
+# == Schema Information
+#
+# Table name: admins
+#
+#  id              :integer          not null, primary key
+#  name            :string(255)
+#  email           :string(255)
+#  password_digest :string(255)
+#  created_at      :datetime
+#  updated_at      :datetime
+#  remember_token  :string(255)
+#
+
 class Admin < ActiveRecord::Base
+
+  has_many :blogposts, dependent: :destroy
+
   before_create :create_remember_token
   before_save { self.email = email.downcase }
 

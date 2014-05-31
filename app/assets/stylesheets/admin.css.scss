@@ -14,46 +14,62 @@ body, html {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #f2ede3;
-  background: #F8F8FF;
+  color: #fff;
+  background: #2091b2;//F8F8FF;
   font-size: 0.9em;
   font-weight: 300;
 }
-
-#page-container {
-  height: 100%;
-}
-
-h1 {
-  color: #000;
-  font-size: 5em;
+h2 {
+  font-size: 4em;
+  font-weight: 700;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
 }
-
-.signin-form {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-}
-
-.signin-form input {
+.input-field {
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
   color: #555;
+  margin: 10px auto;
+  padding: 0 10px;
+  text-align: left;
+  width: 370px;
+}
+.signin-container {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+}
+.signin-form {
+  width: 100%;
+}
+.signin-form input {
+  border-radius: 5px;
   display: block;
   font-family: inherit;
   font-size: 30px;
   line-height: 40px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  width: 20%;
 }
-
+.submit-button {
+  background: rgb(254,231,154);
+  background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
+  background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
+  background: linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
+  border: 1px solid #D69E31;
+  color: #85592e;
+  cursor: pointer;
+  margin: 35px auto;
+  padding: 5px 10px;
+  text-align: center;
+  width: 160px;
+}
+.submit-button:hover {
+  background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
+  background: linear-gradient(top,  rgbagba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
+}
