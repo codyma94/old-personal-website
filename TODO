@@ -6,6 +6,7 @@
     - Also only make it load on click
 
 - Home
+  - Contact Section is a bit messed up, maybe move it out
   - Bind ESC to minimizing a div
   - Add stuff to projects section?
     - Alternatively, just move contacts out of about, and fuck the projects section
