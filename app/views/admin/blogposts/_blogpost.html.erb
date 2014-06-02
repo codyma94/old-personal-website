@@ -3,7 +3,7 @@
     <%= blogpost.title %>
   </h2>
   <div class="blogpost-content">
-    <%= blogpost.content %>
+    <%= raw blogpost.content %>
   </div>
 
   <%= link_to "Delete", admin_blogpost_path(blogpost), method: "delete", data: { confirm: "You sure?" }%>
