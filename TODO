@@ -1,30 +1,30 @@
-- Blogging
-  - Style admin side of blogging
-    - Maybe make modal for new post instead of text field above (new tab might be better functionaltity-wise though)
-  - Add abilty to edit posts
-  - Make blog section generate from db
-    - Also only make it load on click
+[ ] Blogging
+  [ ] Style admin side of blogging
+    [ ] Maybe make modal for new post instead of text field above (new tab might be better functionaltity[ ]wise though)
+  [ ] Add abilty to edit posts
+  [ ] Make blog section generate from db
+    [ ] Also only make it load on click
 
-- Home
-  - Contact Section is a bit messed up, maybe move it out
-  - Bind ESC to minimizing a div
-  - Add stuff to projects section?
-    - Alternatively, just move contacts out of about, and fuck the projects section
-  - Move contacts stuff horizontal and see if it looks better
-  - Change color scheme
-  - Increase font size in header of resume (address stuff is kinda small)
+[ ] Home
+  [x] Contact Section is a bit messed up, maybe move it out
+  [x] Bind ESC to minimizing a div
+  [x] Add stuff to projects section?
+    [x] Alternatively, just move contacts out of about, and fuck the projects section
+  [x] Move contacts stuff horizontal and see if it looks better
+  [ ] Change color scheme
+  [ ] Increase font size in header of resume (address stuff is kinda small)
 
-- Other
-  - Install fonts locally.........? Was a giant pain in the ass, not sure if worth it
-  - Figure out how cookies work in production for rails 4 (secret_env in config/)
-  - Yellow login button is kinda weird, might want to rethink that
-    - Cursor is a bit large... kinda being anal though
-    - Otherwise login screen is pretty dope
-  - Learn about heroku db in production
-  - Update 404
+[ ] Other
+  [ ] Install fonts locally.........? Was a giant pain in the ass, not sure if worth it
+  [ ] Figure out how cookies work in production for rails 4 (secret_env in config/)
+  [ ] Yellow login button is kinda weird, might want to rethink that
+    [ ] Cursor is a bit large... kinda being anal though
+    [ ] Otherwise login screen is pretty dope
+  [ ] Learn about heroku db in production
+  [ ] Update 404
 
-- Minimally important/long-term goals
-  - Stop loading application.js for admin side
-  - Add more personally relevant stuff to admin side (todo type thing maybe?)
-  - Backbone? Could be fun
-  - Vim bindings to scroll...?
+[ ] Minimally important/long[ ]term goals
+  [ ] Stop loading application.js for admin side
+  [ ] Add more personally relevant stuff to admin side (todo type thing maybe?)
+  [ ] Backbone? Could be fun
+  [ ] Vim bindings to scroll...?

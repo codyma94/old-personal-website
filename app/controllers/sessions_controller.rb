@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    redirect_to admin_path 
+    redirect_to admin_path
   end
 
   private

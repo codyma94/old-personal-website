@@ -4,7 +4,7 @@ class Admin::BlogpostsController < ApplicationController
 
   def index
     @blogpost = current_admin.blogposts.build if signed_in?
-    @blogposts = current_admin.blogposts.where(public: 'true')
+    @blogposts = current_admin.blogposts.all
   end
 
   def create
