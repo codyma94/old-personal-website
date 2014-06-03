@@ -49,3 +49,6 @@ ruby '2.1.2'
 
 # use unicorn as webserver
 gem 'unicorn'
+
+# redcarpet for markdown parsing
+gem 'redcarpet', '~> 3.0.0'
