@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="admin-body">
+<% if flash[:error] %>
+  <div class="signin-error"><%= flash[:error] %></div>
+<% end %>
 
 <%= yield %>
 

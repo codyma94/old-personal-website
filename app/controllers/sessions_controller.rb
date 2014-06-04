@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       sign_in admin
       redirect_to admin_path
     else
+      flash[:error] = "Incorrect email/password combination"
       redirect_to signin_path
     end
   end

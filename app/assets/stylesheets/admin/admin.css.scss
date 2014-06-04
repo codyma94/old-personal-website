@@ -116,3 +116,17 @@ h2 {
 .blogpost-content {
   font-size: 1.1em;
 }
+
+.signin-error {
+  background-color: #FF6161;
+  color: #fff;
+  font-size: 1.5em;
+  height: 2em;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
