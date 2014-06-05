@@ -1,13 +1,15 @@
 <div class="blogposts-container">
-  <%= form_for([:admin, @blogpost]) do |f| %>
-    <%= f.text_field :title, placeholder: "Title", class: "blogpost-new-title"%>
-    <%= f.text_area :content, placeholder: "Content...", class: "blogpost-new-content" %>
-    <div class="blogpost-new-public">
-      <%= f.label "Public" %>
-      <%= f.check_box :public %>
-    </div>
-    <%= f.submit "Post", class:"blogpost-submit"%>
-  <% end %>
+  <div class="blogpost">
+    <%= form_for([:admin, @blogpost]) do |f| %>
+      <%= f.text_field :title, placeholder: "Title", class: "blogpost-new-title"%>
+      <div class="blogpost-public-checkbox">
+        <%= f.check_box :public %>
+        <%= f.label "Public" %>
+      </div>
+      <%= f.text_area :content, placeholder: "Content...", class: "blogpost-new-content" %>
+      <%= f.submit "Post", class:"blogpost-submit"%>
+    <% end %>
+  </div>
 
   <%= render @blogposts %>
 </div>

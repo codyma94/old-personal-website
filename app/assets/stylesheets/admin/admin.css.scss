@@ -93,22 +93,7 @@ h2 {
   width: 100%;
 }
 
-.new_blogpost {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.new_blogpost input {
-  display: block;
-  margin: 0 auto;
-}
-
-.new_blogpost textarea {
-  display: block;
-  margin: 0 auto;
-}
-
-.blogpost-new input.blogpost-new-title {
+.blogpost-new input {
   line-height: 24px;
   width: 100%;
 }
@@ -129,4 +114,44 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 999;
+}
+
+.blogpost-new-title {
+  float: left;
+  font-family: inherit;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+  padding: 0px 5px;
+  width: 75%;
+}
+
+.blogpost-new-content {
+  font-family: inherit;
+  font-size: 1.1em;
+  height: 15em;
+  padding: 2px 5px;
+  resize: none;
+  width: 100%;
+}
+
+.blogpost-public-checkbox {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.blogpost-submit {
+  background:-webkit-gradient(linear,0 50%,100% 50%,from(blue),to(red));
+  background:-webkit-linear-gradient(0deg, blue, red);
+  background:-moz-linear-gradient(0deg, blue, red);
+  background:-o-linear-gradient(0deg, blue, red);
+  background:linear-gradient(0deg, blue, red);
+
+  border-radius: 10px;
+  border: 0px;
+  float: right;
+  height: 40px;
+  width: 70px;
 }
