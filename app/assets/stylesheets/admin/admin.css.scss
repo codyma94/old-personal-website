@@ -59,13 +59,9 @@ h2 {
   background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
   background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
   background: linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
-  border: 1px solid #D69E31;
   color: #85592e;
   cursor: pointer;
-  margin: 35px auto;
-  padding: 5px 10px;
   text-align: center;
-  width: 160px;
 }
 .submit-button:hover {
   background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
@@ -73,6 +69,12 @@ h2 {
   background: linear-gradient(top,  rgbagba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
 }
 
+.signin-submit {
+  border: 1px solid #D69E31;
+  margin: 35px auto;
+  padding: 5px 10px;
+  width: 160px;
+}
 //blogpost stuff
 
 .blogposts-container {
@@ -128,9 +130,9 @@ h2 {
 
 .blogpost-new-content {
   font-family: inherit;
-  font-size: 1.1em;
+  font-size: 16px;
   height: 15em;
-  padding: 2px 5px;
+  padding: 5px 5px;
   resize: none;
   width: 100%;
 }
@@ -143,15 +145,20 @@ h2 {
 }
 
 .blogpost-submit {
-  background:-webkit-gradient(linear,0 50%,100% 50%,from(blue),to(red));
-  background:-webkit-linear-gradient(0deg, blue, red);
-  background:-moz-linear-gradient(0deg, blue, red);
-  background:-o-linear-gradient(0deg, blue, red);
-  background:linear-gradient(0deg, blue, red);
-
   border-radius: 10px;
   border: 0px;
+  font-size: 18px;
   float: right;
   height: 40px;
-  width: 70px;
+  width: 100px;
+}
+
+code {
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  color: #c7254e;
+  display: inline-block;
+  font-size: 90%;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
