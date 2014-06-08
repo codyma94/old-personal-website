@@ -159,7 +159,11 @@
       </div>
       <div class="bl-content">
         <h2> My Ponderings </h2>
-        <p> Sadly, none at the moment </p>
+        <% if @blogposts.empty? %>
+          <p> Sadly, none at the moment </p>
+        <% else %>
+          <% render @blogposts %>
+        <% end %>
       </div>
       <i class="fa fa-minus bl-icon bl-icon-close"></i>
     </section>
