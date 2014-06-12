@@ -3,7 +3,7 @@ class Admin::BlogpostsController < ApplicationController
   layout "admin"
 
   def index
-    @blogpost = current_admin.blogposts.build if signed_in?
+    @new_blogpost = current_admin.blogposts.build
     @blogposts = current_admin.blogposts.all
   end
 

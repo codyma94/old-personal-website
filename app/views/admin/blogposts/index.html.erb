@@ -1,6 +1,6 @@
 <div class="blogposts-container">
   <div class="blogpost">
-    <%= form_for([:admin, @blogpost]) do |f| %>
+    <%= form_for([:admin, @new_blogpost]) do |f| %>
       <%= f.text_field :title, placeholder: "Title", class: "blogpost-new-title"%>
       <div class="blogpost-public-checkbox">
         <%= f.check_box :public %>
