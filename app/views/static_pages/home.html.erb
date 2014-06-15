@@ -159,11 +159,7 @@
       </div>
       <div class="bl-content">
         <h2> My Ponderings </h2>
-        <% if @blogposts.empty? %>
-          <p> Sadly, none at the moment </p>
-        <% else %>
-          <%= render @blogposts %>
-        <% end %>
+        <p> Sadly, none at the moment </p>
       </div>
       <i class="fa fa-minus bl-icon bl-icon-close"></i>
     </section>
@@ -188,14 +184,4 @@
 
 <script type="text/javascript">
   Boxlayout.init();
-
-  keys = []
-  konami = '38,38,40,40,37,39,37,39,66,65,13';
-  $(document).keydown(function(e) {
-      keys.push(e.keyCode);
-      if (keys.toString().indexOf(konami) >= 0) {
-        console.log("Wooo you can read Javascript :D");
-        keys = [];
-      }
-  });
 </script>
