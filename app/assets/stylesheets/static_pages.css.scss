@@ -38,6 +38,11 @@ a:hover {
   text-decoration: underline;
 }
 
+b {
+  font-size: 90%;
+  font-weight: 600;
+}
+
 .container {
   height: 100%;
 }
@@ -127,6 +132,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
+
 .bl-icon:before {
 	display: block;
 	font-size: 2em;
@@ -204,13 +210,45 @@ div.bl-panel-items > div > div {
 	font-size: 1.4em;
 }
 
+.post {
+  margin: 20px auto 40px;
+  width: 95%;
+}
+
+.post h3 {
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	font-size: 3em;
+	letter-spacing: 2px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.blogpost-header {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.blogpost-left {
+  float: left;
+}
+
+.blogpost-right {
+  float: right;
+}
+
+.blogpost-content {
+  clear: both;
+}
+
+
+
 .resume-left {
-  display: inline-block;
   float: left;
 }
 
 .resume-right {
-  display: inline-block;
   float: right;
   text-align: right;
 }

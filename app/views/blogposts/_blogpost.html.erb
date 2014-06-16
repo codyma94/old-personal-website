@@ -1,6 +1,17 @@
-<h3>
-  <%= blogpost.title %>
-</h3>
-<p>
-  <%= markdown(blogpost.content) %>
-</p>
+<div class="post">
+  <div class="blogpost-header">
+    <div class="blogpost-left">
+      <h3>
+        <%= blogpost.title %>
+      </h3>
+    </div>
+    <div class="blogpost-right">
+      <p>
+        <%= blogpost.created_at.to_time.strftime('%B %e, %Y') %>
+      </p>
+    </div>
+  </div>
+  <div class="blogpost-content">
+    <%= markdown(blogpost.content) %>
+  </div>
+</div>
