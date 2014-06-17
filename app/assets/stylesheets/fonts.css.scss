@@ -28,3 +28,17 @@
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: asset-url('Montserrat-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: norma;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: asset-url('Montserrat-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
