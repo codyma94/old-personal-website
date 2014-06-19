@@ -1,6 +1,6 @@
-class StaticPagesController < ApplicationController
+class BlogpostsController < ApplicationController
 
-  def home
+  def index
     @blogposts = Blogpost.all.where(:public => true)
   end
 

@@ -211,7 +211,11 @@ div.bl-panel-items > div > div {
 }
 
 .post {
+  /*height: 500px;*/
+  border-bottom: 2px solid gray;
+  max-height: 500px;
   margin: 20px auto 40px;
+  overflow: hidden;
   width: 95%;
 }
 
