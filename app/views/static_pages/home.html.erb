@@ -21,7 +21,7 @@
       <div class="bl-content">
         <h2 class="name"> Cody Ma </h2>
         <h4> 69 Brown Street, Box 7492 | Providence, RI 02912 </h4>
-        <h4> 781-799-5119 | cody_ma (at) brown.edu </h4>
+        <h4> 781-799-5119 | cody_ma (at) brown (dot) edu </h4>
         <div class="resume-section-container">
           <h2 class="resume-section-header"> Education </h2>
           <div class="resume-section">
@@ -55,7 +55,9 @@
             </div>
             <div class="resume-right"> Summer 2014 </div>
             <div class="resume-description">
-              <div class="resume-left"> Summer Intern </div>
+              <div class="resume-left">
+                <i>Summer Intern </i>
+              </div>
               <ul>
                 <li> Summer intern at AppNeta </li>
               </ul>
@@ -67,7 +69,9 @@
             </div>
             <div class="resume-right"> 2013 - Present </div>
             <div class="resume-description">
-              <div class="resume-left">Web developer</div>
+              <div class="resume-left">
+                <i>Web developer</i>
+              </div>
               <ul>
                 <li>Webdev for BDH </li>
               </ul>
@@ -131,7 +135,7 @@
             <div class="resume-description">
               <ul class="one-liners">
                 <li> <b> Most experienced with</b>: Python, C, Ruby on Rails, Java</li>
-                <li> <b> Knowledgable about</b>: Scala, Javascript, jQuery, HTML/CSS, MySQL, OCaml, Scheme, BASH</li>
+                <li> <b> Knowledgable about</b>: Scala, Javascript, jQuery, HTML/CSS, MySQL, OCaml, Scheme, Bash</li>
             </div>
           </div>
         </div>
@@ -142,9 +146,9 @@
               <table class="full-table">
                 <tr>
                   <td> Frisbee </td>
-                  <td> Ping Pong </td>
-                  <td> Reading </td>
-                  <td> French </td>
+                  <td> Dogs </td>
+                  <td> Game of Thrones </td>
+                  <td> (Dunkin Donuts) Coffee </td>
                 </tr>
               </table>
             </div>
@@ -159,11 +163,7 @@
       </div>
       <div class="bl-content">
         <h2> My Ponderings </h2>
-        <% if @blogposts.empty? %>
-          <p> Sadly, none at the moment </p>
-        <% else %>
-          <%= render @blogposts %>
-        <% end %>
+        <p> Sadly, none at the moment </p>
       </div>
       <i class="fa fa-minus bl-icon bl-icon-close"></i>
     </section>
@@ -188,14 +188,4 @@
 
 <script type="text/javascript">
   Boxlayout.init();
-
-  keys = []
-  konami = '38,38,40,40,37,39,37,39,66,65,13';
-  $(document).keydown(function(e) {
-      keys.push(e.keyCode);
-      if (keys.toString().indexOf(konami) >= 0) {
-        console.log("Wooo you can read Javascript :D");
-        keys = [];
-      }
-  });
 </script>
