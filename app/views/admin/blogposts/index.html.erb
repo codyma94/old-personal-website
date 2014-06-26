@@ -1,5 +1,5 @@
 <div class="blogposts-container">
-  <div class="post">
+  <div class="blogpost">
     <%= form_for([:admin, @new_blogpost]) do |f| %>
       <%= f.text_field :title, placeholder: "Title", class: "blogpost-new-title"%>
       <div class="blogpost-public-checkbox">
@@ -7,7 +7,7 @@
         <%= f.label "Public" %>
       </div>
       <%= f.text_area :content, placeholder: "Content...", class: "blogpost-new-content" %>
-      <%= f.submit "Post", class:"submit-button blogpost-submit"%>
+      <%= f.submit "Post", class:"submit-button signin-submit"%>
     <% end %>
   </div>
 

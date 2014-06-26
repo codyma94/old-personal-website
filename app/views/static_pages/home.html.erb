@@ -25,10 +25,10 @@
         <div class="resume-section-container">
           <h2 class="resume-section-header"> Education </h2>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> Brown University</b>, BS in Comp. Sci., GPA: 3.4
             </div>
-            <div class="resume-right">
+            <div class="float-right pull-right">
               Providence, RI | Class of 2016
             </div>
             <div class="resume-description">
@@ -36,10 +36,10 @@
             </div>
           </div>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> Lexington High School</b>, 3.74 GPA
             </div>
-            <div class="resume-right">
+            <div class="float-right">
               Lexington, MA | Class of 2012
             </div>
             <div class="resume-description">
@@ -50,12 +50,12 @@
         <div class="resume-section-container">
           <h2 class="resume-section-header"> Experience </h2>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> AppNeta </b>
             </div>
-            <div class="resume-right"> Summer 2014 </div>
+            <div class="float-right pull-right"> Summer 2014 </div>
             <div class="resume-description">
-              <div class="resume-left">
+              <div class="float-left">
                 <i>Summer Intern </i>
               </div>
               <ul>
@@ -64,12 +64,12 @@
             </div>
           </div>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> Blog Daily Herald </b>
             </div>
-            <div class="resume-right"> 2013 - Present </div>
+            <div class="float-right pull-right"> 2013 - Present </div>
             <div class="resume-description">
-              <div class="resume-left">
+              <div class="float-left">
                 <i>Web developer</i>
               </div>
               <ul>
@@ -78,15 +78,15 @@
             </div>
           </div>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> Brown University Computer Science Department </b>
             </div>
-            <div class="resume-right"> Providence, RI </div>
+            <div class="float-right pull-right"> Providence, RI </div>
             <div class="resume-description">
-              <div class="resume-left">
+              <div class="float-left">
                 <i>Teaching Assistant CS018</i>
               </div>
-              <div class="resume-right">
+              <div class="float-right pull-right">
                 Spring 2013
               </div>
               <ul>
@@ -98,10 +98,10 @@
               </ul>
             </div>
             <div class="resume-description">
-              <div class="resume-left">
+              <div class="float-left">
                 <i>Teaching Assistant CS017</i>
               </div>
-              <div class="resume-right">
+              <div class="float-right pull-right">
                 Fall 2013
               </div>
               <ul>
@@ -111,14 +111,14 @@
             </div>
           </div>
           <div class="resume-section">
-            <div class="resume-left">
+            <div class="float-left">
               <b> TopMind </b>
             </div>
-            <div class="resume-right">
+            <div class="float-right pull-right">
               Shanghai, China | Summer 2013
             </div>
             <div class="resume-description">
-              <div class="resume-left">
+              <div class="float-left">
                 <i> Ruby on Rails Developer</i>
               </div>
               <ul>
@@ -145,10 +145,10 @@
             <div class="resume-description">
               <table class="full-table">
                 <tr>
-                  <td> Frisbee </td>
-                  <td> Dogs </td>
-                  <td> Game of Thrones </td>
-                  <td> (Dunkin Donuts) Coffee </td>
+                  <td> Machine Learning </td>
+                  <td> Vim </td>
+                  <td> Filler </td>
+                  <td> Fillter </td>
                 </tr>
               </table>
             </div>
@@ -162,8 +162,8 @@
         <h2> Blog </h2>
       </div>
       <div class="bl-content">
-        <h2> My Ponderings </h2>
         <% if @blogposts.empty? %>
+        <h2> My Ponderings </h2>
           <p> Sadly, none at the moment </p>
         <% else %>
           <%= render @blogposts %>

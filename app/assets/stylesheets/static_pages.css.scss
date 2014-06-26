@@ -1,4 +1,5 @@
 /*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+@import "blogposts.css.scss";
 
 body, html {
   font-size: 100%;
@@ -15,7 +16,7 @@ body, html {
 	box-sizing: border-box;
 }
 
-body {
+body.home {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: #f2ede3;
   background: #333;
@@ -211,49 +212,19 @@ div.bl-panel-items > div > div {
 	font-size: 1.4em;
 }
 
-.post {
-  /*height: 500px;*/
-  border-bottom: 2px solid gray;
-  max-height: 500px;
-  margin: 20px auto 40px;
-  overflow: hidden;
-  width: 95%;
-}
-
-.post h3 {
-  font-family: "Montserrat", sans-serif;
-	margin: 0;
-	padding: 0px;
-	width: 100%;
-	font-size: 3em;
-	letter-spacing: 2px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.blogpost-header {
-  margin-bottom: 20px;
-  overflow: auto;
-}
-
-.blogpost-left {
+.float-left {
   float: left;
 }
 
-.blogpost-right {
+.float-right {
   float: right;
 }
 
-.blogpost-content {
-  clear: both;
+.pull-left {
+  text-align: left;
 }
 
-.resume-left {
-  float: left;
-}
-
-.resume-right {
-  float: right;
+.pull-right {
   text-align: right;
 }
 

@@ -1,0 +1,59 @@
+.blogposts-container {
+  width: 100%;
+}
+
+.blogpost {
+  margin: 20px auto 40px;
+  width: 90%;
+}
+
+.blogpost h3 {
+  font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	font-size: 3em;
+	letter-spacing: 2px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.blogpost-header {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.blogpost-content {
+  clear: both;
+}
+
+.blogpost-new input {
+  line-height: 24px;
+  width: 100%;
+}
+
+.blogpost-new-title {
+  float: left;
+  font-family: inherit;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+  padding: 0px 5px;
+  width: 75%;
+}
+
+.blogpost-new-content {
+  font-family: inherit;
+  font-size: 16px;
+  height: 15em;
+  padding: 5px 5px;
+  resize: none;
+  width: 100%;
+}
+
+.blogpost-public-checkbox {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  overflow: hidden;
+}

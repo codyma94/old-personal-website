@@ -12,10 +12,10 @@ body, html {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-body {
+body.admin-body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: #fff;
-  background: #2091b2;//F8F8FF;
+  background: #2091b2;
   font-weight: 300;
 }
 h2 {
@@ -73,62 +73,16 @@ h2 {
   padding: 5px 10px;
   width: 160px;
 }
-//blogpost stuff
 
-.blogposts-container {
-  width: 100%;
+code {
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  color: #c7254e;
+  display: inline-block;
+  font-size: 90%;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
-
-.post {
-  margin: 20px auto 40px;
-  width: 90%;
-}
-
-.post h3 {
-  font-family: "Montserrat", sans-serif;
-	margin: 0;
-	padding: 0px;
-	width: 100%;
-	font-size: 3em;
-	letter-spacing: 2px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.blogpost-header {
-  margin-bottom: 20px;
-  overflow: auto;
-}
-
-.blogpost-left {
-  float: left;
-}
-
-.blogpost-right {
-  float: right;
-}
-
-.blogpost-content {
-  clear: both;
-}
-
-/*.blogpost h2.blogpost-title {*/
-  /*font-size: 3em;*/
-  /*font-weight: 700;*/
-  /*margin: 0 auto;*/
-  /*padding: 0;*/
-  /*text-align: left;*/
-  /*width: 100%;*/
-/*}*/
-
-.blogpost-new input {
-  line-height: 24px;
-  width: 100%;
-}
-
-/*.blogpost-content {*/
-  /*font-size: 1.1em;*/
-/*}*/
 
 .signin-error {
   background-color: #FF6161;
@@ -142,49 +96,4 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 999;
-}
-
-.blogpost-new-title {
-  float: left;
-  font-family: inherit;
-  font-size: 1.8em;
-  line-height: 1.8em;
-  margin-bottom: 10px;
-  padding: 0px 5px;
-  width: 75%;
-}
-
-.blogpost-new-content {
-  font-family: inherit;
-  font-size: 16px;
-  height: 15em;
-  padding: 5px 5px;
-  resize: none;
-  width: 100%;
-}
-
-.blogpost-public-checkbox {
-  display: inline-block;
-  float: right;
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-.blogpost-submit {
-  border-radius: 10px;
-  border: 0px;
-  font-size: 18px;
-  float: right;
-  height: 40px;
-  width: 100px;
-}
-
-code {
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-  display: inline-block;
-  font-size: 90%;
-  padding: 2px 4px;
-  white-space: nowrap;
 }
