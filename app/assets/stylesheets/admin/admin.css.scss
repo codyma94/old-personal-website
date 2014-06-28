@@ -4,7 +4,6 @@ body, html {
   margin: 0;
   height: 100%;
 }
-
 *,
 *:after,
 *:before {
@@ -66,14 +65,12 @@ h2 {
   background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
   background: linear-gradient(top,  rgbagba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
 }
-
 .signin-submit {
   border: 1px solid #D69E31;
   margin: 35px auto;
   padding: 5px 10px;
   width: 160px;
 }
-
 code {
   background-color: #f9f2f4;
   border-radius: 4px;
@@ -83,7 +80,6 @@ code {
   padding: 2px 4px;
   white-space: nowrap;
 }
-
 .signin-error {
   background-color: #FF6161;
   color: #fff;

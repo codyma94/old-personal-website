@@ -1,12 +1,11 @@
 .blogposts-container {
   width: 100%;
 }
-
 .blogpost {
+  clear: both;
   margin: 20px auto 40px;
   width: 90%;
 }
-
 .blogpost h3 {
   font-family: "Montserrat", sans-serif;
 	margin: 0;
@@ -17,21 +16,17 @@
 	font-weight: 500;
 	text-transform: uppercase;
 }
-
 .blogpost-header {
   margin-bottom: 20px;
   overflow: auto;
 }
-
 .blogpost-content {
   clear: both;
 }
-
 .blogpost-new input {
   line-height: 24px;
   width: 100%;
 }
-
 .blogpost-new-title {
   float: left;
   font-family: inherit;
@@ -41,7 +36,6 @@
   padding: 0px 5px;
   width: 75%;
 }
-
 .blogpost-new-content {
   font-family: inherit;
   font-size: 16px;
@@ -50,10 +44,23 @@
   resize: none;
   width: 100%;
 }
-
 .blogpost-public-checkbox {
   display: inline-block;
   float: right;
   margin-top: 20px;
   overflow: hidden;
+}
+.blogpost-submit {
+  border: 1px solid #D69E31;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  width: 100px;
+}
+.blogpost-delete {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
 }
