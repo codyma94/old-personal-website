@@ -11,6 +11,29 @@
     <% end %>
   </div>
 
-  <%= render @blogposts %>
+  <% @blogposts.each do |blogpost| %>
+    <div class="blogpost" id="<%= blogpost.id %>">
+      <div class="blogpost-header">
+        <div class="blogpost-title float-left">
+          <h3>
+            <%= link_to blogpost.title, admin_blogpost_path(blogpost), target: "_blank" %>
+          </h3>
+        </div>
+        <div class="float-right blogpost-date">
+          <p>
+            <%= blogpost.created_at.to_time.strftime('%B %e, %Y') %>
+          </p>
+        </div>
+      </div>
+      <div class="blogpost-content">
+        <% if blogpost.content.length > 140 %>
+          # truncate blogpost then add readmore link
+          # keep it short, like 140 characters top i think
+        <% else %>
+          # just display post
+        <% end %>
+    </div>
+  <% end %>
+
+  <%= button_to "Sign Out" , signout_path , method: 'delete'%>
 </div>
-<%= button_to "Sign Out" , signout_path , method: 'delete'%>

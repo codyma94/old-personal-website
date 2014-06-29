@@ -58,9 +58,13 @@
 }
 .blogpost-delete {
   background-color: #d9534f;
+  border: 1px solid transparent;
   border-color: #d43f3a;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
   padding: 5px;
+  &:hover {
+    background-color: #d33833;
+  }
 }

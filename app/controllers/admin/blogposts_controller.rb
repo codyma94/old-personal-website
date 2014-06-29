@@ -14,8 +14,26 @@ class Admin::BlogpostsController < ApplicationController
     end
   end
 
+  def show
+    @blogpost = Blogpost.find(params[:id])
+  end
+
+  def edit
+    @blogpost = Blogpost.find(params[:id])
+  end
+
+  def update
+    @blogpost = Blogpost.find(params[:id])
+    if @user.update_attributes(user_params)
+      flash[:success] = "Post updated"
+      redirect_to @blogpost
+    else
+      render "edit"
+    end
+  end
+
   def destroy
-    @blogpost = Blogpost.find((params[:id]))
+    @blogpost = Blogpost.find(params[:id])
     if @blogpost.present?
       @blogpost.destroy
     end
