@@ -1,0 +1,10 @@
+<%= form_for([:admin, @blogpost]) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_area :title %>
+
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+
+  <%= f.submit "Save changes", data: { confirm: "Are you sure?" } %>
+<% end %>
+

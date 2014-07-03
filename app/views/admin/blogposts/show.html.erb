@@ -14,7 +14,6 @@
   <div class="blogpost-content">
     <%= markdown(@blogpost.content) %>
   </div>
-  <div class="delete-blogpost-button">
-    <%= button_to "Delete", admin_blogpost_path(@blogpost), class:"float-right blogpost-delete", method: "delete", data: { confirm: "You sure?" }%>
-  </div>
+  <%= button_to "Edit", edit_admin_blogpost_path(@blogpost), class: "float-left blogpost-edit", method: "get" %>
+  <%= button_to "Delete", admin_blogpost_path(@blogpost), class:"float-right blogpost-delete", method: "delete", data: { confirm: "You sure?" }%>
 </div>

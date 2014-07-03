@@ -24,9 +24,9 @@ class Admin::BlogpostsController < ApplicationController
 
   def update
     @blogpost = Blogpost.find(params[:id])
-    if @user.update_attributes(user_params)
+    if @blogpost.update_attributes(blogpost_params)
       flash[:success] = "Post updated"
-      redirect_to @blogpost
+      redirect_to [:admin, @blogpost]
     else
       render "edit"
     end
