@@ -1,0 +1,14 @@
+<section id="blog">
+  <div class="bl-box">
+    <h2> Blog </h2>
+  </div>
+  <div class="bl-content">
+    <% if @blogposts.empty? %>
+    <h2> My Ponderings </h2>
+      <p> Sadly, none at the moment </p>
+    <% else %>
+      <%= render @blogposts %>
+    <% end %>
+  </div>
+  <i class="fa fa-minus bl-icon bl-icon-close"></i>
+</section>
