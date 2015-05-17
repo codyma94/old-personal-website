@@ -27,11 +27,13 @@ var Boxlayout = (function() {
 
       // expand the clicked section and scale down the others
       $section.on( 'click', function() {
+        var newHash = $section.attr('id');
 
         if( !$section.data( 'open' ) ) {
           $section.data( 'open', true ).addClass( 'bl-expand bl-expand-top' );
           $el.addClass( 'bl-expand-item' );
         }
+        window.location.hash = newHash;
 
       }).find( 'i.bl-icon-close' ).on( 'click', function(e) {
 
@@ -46,6 +48,7 @@ var Boxlayout = (function() {
         }
 
         $el.removeClass( 'bl-expand-item' );
+        window.location.hash = "";
 
         return false;
 
@@ -64,6 +67,7 @@ var Boxlayout = (function() {
           }
 
           $el.removeClass( 'bl-expand-item' );
+          window.location.hash = "";
         }
       });
     });
