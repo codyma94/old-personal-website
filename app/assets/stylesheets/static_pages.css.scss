@@ -248,42 +248,26 @@ div.bl-panel-items > div > div {
 }
 
 .resume-btn {
-  -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
-  box-shadow:inset 0px 1px 0px 0px #f5978e;
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
-  background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
   background-color:#ee4444;
-  -webkit-border-top-left-radius:8px;
-  -moz-border-radius-topleft:8px;
-  border-top-left-radius:8px;
-  -webkit-border-top-right-radius:8px;
-  -moz-border-radius-topright:8px;
-  border-top-right-radius:8px;
-  -webkit-border-bottom-right-radius:8px;
-  -moz-border-radius-bottomright:8px;
-  border-bottom-right-radius:8px;
-  -webkit-border-bottom-left-radius:8px;
-  -moz-border-radius-bottomleft:8px;
-  border-bottom-left-radius:8px;
-  text-indent:0px;
+  background:-moz-linear-gradient( center top, #f35447 5%, #d53021 100% );
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f35447), color-stop(1, #d53021) );
+  border-radius: 10px;
   border:1px solid #d46c65;
-  display:inline-block;
+  /*box-shadow:inset 0px 1px 0px 0px #f5978e;*/
   color:#ffffff;
+  display:inline-block;
   font-size:15px;
   font-style:normal;
-  height:50px;
+  height:55px;
   line-height:50px;
-  width:15%;
-  text-decoration:none;
   text-align:center;
-  text-shadow:1px 1px 0px #810e05;
+  text-decoration:none;
+  text-indent:0px;
+  width:15%;
 }
 .resume-btn:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
-  background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d53021), color-stop(1, #f46357) );
+  background:-moz-linear-gradient( center top, #d53021 5%, #f46357 100% );
   background-color:#c62d1f;
 }
 

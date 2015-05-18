@@ -4,4 +4,6 @@ class BlogpostsController < ApplicationController
     @blogposts = Blogpost.all.where(:public => true)
   end
 
+  def show
+  end
 end
