@@ -2,7 +2,7 @@
   <div class="blogpost-header">
     <div class="float-left">
       <h3>
-        <%= blogpost.title %>
+        <%= link_to blogpost.title, blog_path(blogpost) %>
       </h3>
     </div>
     <div class="float-right">
@@ -12,9 +12,9 @@
     </div>
   </div>
   <div class="blogpost-content">
-    <% if blogpost.content.length > 200 %>
-      <p> <%= markdown(blogpost.content[0, 200] + "...") %>
-    <%= link_to "Read More", blog_path(blogpost), target: "_blank" %> </p>
+    <% if blogpost.content.length > 500 %>
+      <p> <%= markdown(blogpost.content[0, 500] + "...") %>
+    <%= link_to "Read More", blog_path(blogpost) %> </p>
     <% else %>
       <%= markdown(blogpost.content) %>
     <% end %>

@@ -34,4 +34,5 @@ var sectionClose = (function($el, $section) {
   $section.data('open', false).removeClass();
   $el.removeClass('bl-expand-item');
   window.location.hash = "";
+  document.title = "Cody Ma";
 });

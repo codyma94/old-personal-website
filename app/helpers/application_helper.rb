@@ -11,4 +11,12 @@ module ApplicationHelper
     markdown.render(content).html_safe
   end
 
+  def full_title(page_title = '')
+    if page_title.empty?
+      "Cody Ma"
+    else
+      page_title
+    end
+  end
+
 end

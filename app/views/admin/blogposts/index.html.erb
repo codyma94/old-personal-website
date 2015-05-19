@@ -26,8 +26,8 @@
         </div>
       </div>
       <div class="blogpost-content">
-        <% if blogpost.content.length > 200 %>
-          <p> <%= blogpost.content[0, 200] + "..." %>
+        <% if blogpost.content.length > 500 %>
+          <p> <%= blogpost.content[0, 500] + "..." %>
         <%= link_to "Read More", admin_blogpost_path(blogpost) %></p>
         <% else %>
           <p> <%= markdown(blogpost.content) %></p>

@@ -9,15 +9,19 @@ $(window).on('load hashchange', function(){
     switch (hash) {
       case "about":
         $child = $("#bl-main section:nth-child(1)")
+        document.title = "Cody Ma | About"
         break;
       case "resume":
         $child = $("#bl-main section:nth-child(2)")
+        document.title = "Cody Ma | Resume"
         break;
       case "blog":
         $child = $("#bl-main section:nth-child(3)")
+        document.title = "Cody Ma | Blog"
         break;
       case "contact":
         $child = $("#bl-main section:nth-child(4)")
+        document.title = "Cody Ma | Contact"
         break;
     }
 
