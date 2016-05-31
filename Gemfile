@@ -52,3 +52,6 @@ gem 'unicorn'
 
 # redcarpet for markdown parsing
 gem 'redcarpet', '~> 3.0.0'
+
+# heroku suggested this
+gem 'rails_12factor', group: :production
