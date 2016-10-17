@@ -4,9 +4,9 @@
   </div>
   <div class="bl-content">
     <h2 class="name"> Cody Ma </h2>
-    <h4> 69 Brown Street, Box 7492 | Providence, RI 02912 </h4>
-    <h4> 781-799-5119 | cody_ma@brown.edu </h4>
-    <h4> github.com/codyma94 | www.codyma.com </h4>
+    <h4> San Francisco, California </h4>
+    <h4> www.codyma.com </h4>
+    <h4> codyma94@gmail.com | github.com/codyma94 </h4>
     <div class="resume-section-container">
       <h2 class="resume-section-header"> Education </h2>
       <div class="resume-section">
@@ -17,7 +17,7 @@
           Providence, RI | May 2016
         </div>
         <div class="resume-description">
-          Relevant Courses - Operating Systems, Design/Analysis of Algorithms, Programming Languages, Computer Systems in C and x86, Data Science, Discrete Structures and Probability, Systems Security
+          Relevant Courses - Distributed Systems, Operating Systems, Design and Analysis of Algorithms, Systems Security, Computer Systems in C and x86
         </div>
       </div>
     </div>
@@ -25,15 +25,31 @@
       <h2 class="resume-section-header"> Experience </h2>
       <div class="resume-section">
         <div class="float-left">
-          <b> Twitch.tv </b>
+          <b> Twitch </b>
+        </div>
+        <div class="float-right pull-right"> San Francisco, CA | September 2016 - Present </div>
+        <div class = "resume-description">
+          <div class="float-left">
+            <i> Software Engineer </i>
+          </div>
+          <ul>
+            <li> Develop administrative service in Rails for managing all areas of Twitch including users, channels, and VODs </li>
+            <li> Move the existing codebase into a more service oriented architecture to decrease load on the main application</li>
+          </ul>
+        </div>
+      </div>
+      <div class="resume-section">
+        <div class="float-left">
+          <b> Twitch </b>
         </div>
         <div class="float-right pull-right"> San Francisco, CA | Summer 2015 </div>
         <div class = "resume-description">
           <div class="float-left">
-            <i> Rails and Go Developer </i>
+            <i> Ruby on Rails Developer (Intern) </i>
           </div>
           <ul>
-            <li> API development (More details once I start my internship!)</li>
+            <li> Refactored user related logic in the main Rails application to remove dependency on ActiveRecord and decrease load across the site </li>
+            <li> Created a panel for The International 5 (Dota2 tournament with $16.8M prize pool) to display in-game information pulled from the Valve API </li>
           </ul>
         </div>
       </div>
@@ -44,13 +60,12 @@
         <div class="float-right pull-right"> Boston, MA | Summer 2014 </div>
         <div class="resume-description">
           <div class="float-left">
-            <i>Python and Javascript Developer</i>
+            <i>Python and Javascript Developer (Intern) </i>
           </div>
           <ul>
             <li>Worked on the TraceView web application, which monitors the performance of other web applications </li>
             <li>Update v2.0 of the TraceView REST API and developed v2.1 in Python </li>
             <li>Created graphs in d3.js and tbone.js (a fork of backbone.js) that pulled data across multiple databases for admins to monitor customers' usage of the TraceView application </li>
-            <li>Responsible for handling miscellaneous Github issues submitted by customers or raised by the support team </li>
           </ul>
         </div>
       </div>
@@ -65,8 +80,8 @@
           </div>
           <div class="float-right pull-right"> Spring 2015 - Present </div>
           <ul>
-            <li> Manage the department infrastructure during the Technical Staff's off-hours. This includes handling service outages (i.e. network, filesystem) as well as any problems that individual students or staff members may encounter.</li>
-            <li> Work on improving the departments infrastructure by writing scripts or modifying kits that the department runs on whenever necessary </li>
+            <li> Managed the department infrastructure during the Technical Staff's off-hours. Included handling service outages (i.e. network, filesystem) as well as any problems that individual students or staff members encountered</li>
+            <li> Work on improving the departments infrastructure by writing scripts and modifying kits that the department runs on </li>
           </ul>
         </div>
         <div class="resume-description">
@@ -100,58 +115,30 @@
           </ul>
         </div>
       </div>
-      <div class="resume-section">
-        <div class="float-left">
-          <b> TopMind </b>
-        </div>
-        <div class="float-right pull-right"> Shanghai, China | Summer 2013 </div>
-        <div class="resume-description">
-          <div class="float-left">
-            <i> Ruby on Rails Developer</i>
-          </div>
-          <ul>
-            <li> Responsible for developing the front and backend of a website that allows users to signup and register for courses </li>
-            <li> Developed in Rails, and worked extensively with Javascript, jQuery, Backbone,js, and MySQL </li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="resume-section-container">
       <h2 class="resume-section-header"> Projects </h2>
       <div class="resume-section">
         <div class="float-left">
-          <b> System 5 File System (S5FS) </b>, coded in C
+          <b> Raft</b>, coded in Go
         </div>
         <div class="float-right pull-right"> April 2015 </div>
         <div class="resume-description">
           <ul>
-            <li> Implemented a file system based on the original file system that was released with System V Unix.</li>
-            <li> Files and directories were represented as inodes, and reading/writing to them required maintaining a collection of direct and indirect blocks stored on a (virtual) disc.
+            <li> Implemented the <a href='https://raft.github.io/raft.pdf'> Raft consensus algorithm</a>, an algorithm for replicating log files in a distributed system </li>
+            <li> Allowed for membership changes in the cluster without the need to take any servers offline </li>
           </ul>
         </div>
       </div>
       <div class="resume-section">
         <div class="float-left">
-          <b> Uthreads </b>, coded in C
+          <b> System 5 File System (S5FS)</b>, coded in C
         </div>
-        <div class="float-right pull-right"> February 2015 </div>
+        <div class="float-right pull-right"> April 2015 </div>
         <div class="resume-description">
           <ul>
-            <li> Created a library to manage user-level threads in a Unix-like operating system with a preemtible kernel. </li>
-            <li> Designed mutexes, condition variables, and a scheduler for the running threads. </li>
-          </ul>
-        </div>
-      </div>
-      <div class="resume-section">
-        <div class="float-left">
-          <b> Command Line Twitter </b>, coded in Python
-        </div>
-        <div class="float-right pull-right">
-          August 2014
-        </div>
-        <div class="resume-description">
-          <ul>
-            <li> Script that allows a user to read Tweets from any account from the command line, or post Tweets to their own account. </li>
+            <li> Implemented a file system based on the original file system that was released with System V Unix</li>
+            <li> Files and directories were represented as inodes, and reading/writing required maintaining a collection of direct and indirect blocks stored on a (virtual) disc
           </ul>
         </div>
       </div>
@@ -161,31 +148,16 @@
       <div class="resume-section">
         <div class="resume-description">
           <ul class="one-liners">
-            <li> <b> Most experienced with</b>: Python, C, Javascript, jQuery, Java, Linux</li>
-            <li> <b> Knowledgeable about</b>: Ruby on Rails, HTML/CSS, Scala, MySQL, PostGres, OCaml, Scheme, Bash</li>
-            <li> <b> Learning</b>: Go</li>
+            <li> <b> Most experienced with</b>: Ruby on Rails, Python, C, Javascript, jQuery, Java, Linux</li>
+            <li> <b> Knowledgeable about</b>: Go, HTML/CSS, Scala, SQL, Bash</li>
         </div>
       </div>
     </div>
-    <div class="resume-section-container">
-      <h2 class="resume-section-header"> Other Interests </h2>
-      <div class="resume-section">
-        <div class="resume-description">
-          <table class="full-table">
-            <tr>
-              <td> Vim </td>
-              <td> Philosophy </td>
-              <td> Frisbee</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="resume-section-container" style="text-align: center">
-      <a href="static_pages/download_resume" class="resume-btn-container">
-          <button type="button" class="resume-btn"> Download as PDF </button>
-      </a>
-    </div>
+    <%#<div class="resume-section-container" style="text-align: center">%>
+      <%#<a href="static_pages/download_resume" class="resume-btn-container">%>
+          <%#<button type="button" class="resume-btn"> Download as PDF </button>%>
+      <%#</a>%>
+    <%#</div>%>
   </div>
   <i class="fa fa-minus bl-icon bl-icon-close"></i>
 </section>

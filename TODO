@@ -1,10 +1,3 @@
-[ ] Blogging
-  [ ] Style admin side of blogging
-    [ ] Maybe make modal for new post instead of text field above (new tab might be better functionaltity[ ]wise though)
-  [ ] Add abilty to edit posts
-  [ ] Make blog section generate from db
-    [ ] Also only make it load on click
-
 [ ] Home
   [x] Contact Section is a bit messed up, maybe move it out
   [x] Bind ESC to minimizing a div
@@ -12,7 +5,16 @@
     [x] Alternatively, just move contacts out of about, and fuck the projects section
   [x] Move contacts stuff horizontal and see if it looks better
   [ ] Change color scheme
-  [ ] Increase font size in header of resume (address stuff is kinda small)
+  [-] Increase font size in header of resume (address stuff is kinda small)
+  [x] Remove/update address from resume
+  [x] Update relevant courses
+
+[ ] Blogging
+  [ ] Style admin side of blogging
+    [ ] Maybe make modal for new post instead of text field above (new tab might be better functionaltity[ ]wise though)
+  [ ] Add abilty to edit posts
+  [ ] Make blog section generate from db
+    [ ] Also only make it load on click
 
 [ ] Other
   [ ] Install fonts locally.........? Was a giant pain in the ass, not sure if worth it
