@@ -25,17 +25,17 @@ body.home {
 }
 
 a {
-	color: #f0f0f0;
+  color: #f0f0f0;
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
-  text-transform: uppercase;
+  text-decoration: underline;
 	font-size: 90%;
 }
 
 a:hover {
-	color: #fff;
+  color: #fff;
   text-decoration: underline;
 }
 
